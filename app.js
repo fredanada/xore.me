@@ -1,3 +1,9 @@
+
+// todo list
+
+// error handing middleware
+// what to put in gitignore
+
 var express = require('express');
 var app = express();
 var bodyParser = require('body-parser');
