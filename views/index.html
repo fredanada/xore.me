@@ -1,0 +1,46 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<h3>post track</h3>
+  <hr>
+  <form method="POST" action="/">
+        
+    <div class="form-group">
+
+      <label for="artist" class="col-sm-2 control-label">artist</label>
+      <div class="col-sm-10">
+        <input name="artist" type="text" class="form-control"/>
+      </div>
+
+      <label for="title" class="col-sm-2 control-label">title</label>
+      <div class="col-sm-10">
+        <input name="title" type="text" class="form-control"/>
+      </div>
+
+      <label for="link" class="col-sm-2 control-label">link</label>
+      <div class="col-sm-10">
+        <input name="link" type="text" class="form-control"/>
+      </div>
+
+    </div>
+    
+    <div class="col-sm-offset-2 col-sm-10">
+      <button type="submit" class="btn btn-default">submit</button>
+    </div>
+  
+ </form>
+
+  <h3>library</h3>
+  <hr>
+  <ul class="list-unstyled">
+    <!-- PLACEHOLDER LIST OF PAGES -->
+    {% for track in tracks %}
+    	<li>
+    		<a href="{{track.link}}" class="track">{{track.artist}} - {{track.title}}</a>
+ 				<a href="/{{track.id}}"><input type='button' value="del" class="del-btn"></a></br>
+    	</li>
+
+  	{% endfor %}
+  </ul>
+{% endblock %}
+
