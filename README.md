@@ -1,6 +1,6 @@
 ## xore.me
-*c.r.u.d. app that creates a public directory of music curated across the internet
-*mobile reponsive
+* c.r.u.d. app that creates a public directory of music curated across the internet
+* mobile reponsive
 
 ## screenshot
 
